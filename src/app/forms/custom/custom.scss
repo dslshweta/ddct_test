@@ -1,0 +1,31 @@
+.custom-list {
+  a:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  a button {
+    height: 28px;
+    width: 53px;
+    border-radius: 5px;
+    background-color: #037afc;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  a button:hover {
+    transform: translate(0px, -1px);
+  }
+}
+
+.no-data {
+  width: 70%;
+}
+
+
+.form-name {
+  color: #333;
+  font-size: 21px;
+  text-align: center;
+}

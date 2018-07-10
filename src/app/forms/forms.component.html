@@ -1,0 +1,15 @@
+<div class="row forms-tab">
+  <nav class="site-nav-secondary">
+    <ul>
+      <li *ngFor="let form of forms" routerLinkActive="active-link"><button [routerLink]="form.path" data-toggle="tab">{{
+        form.title
+        }}</button></li>
+    </ul>
+  </nav>
+</div>
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+

@@ -1,0 +1,24 @@
+
+<!--FORM COMPONENT VIEW START-->
+<div *ngIf="nameOfForm" class="form-name">
+  <span>Form Name : </span> 
+  <span>{{nameOfForm}}</span>
+  <a class="edit-formname" (click)="changeFormName()">edit</a>
+</div>
+<form-builder [form]="form" (change)="onChange($event)"></form-builder>
+<!--FORM COMPONENT VIEW END-->
+
+<!--CREATE FORM BUTTON START-->
+  <button *ngIf="creatFlag" class="btn btn-success create-btn" (click)="createForm()">Create Form</button>
+  <button *ngIf="!creatFlag" class="btn btn-success create-btn" (click)="updateForm()">Update Form</button>
+<!--CREATE FORM BUTTON END-->
+
+
+<!--JSON VIEW START-->
+
+<!--<h3 class="text-center text-muted">As JSON Schema</h3>
+<div class="well jsonviewer">
+  <pre id="json" #json></pre>
+</div>-->
+
+<!--JSON VIEW END-->
